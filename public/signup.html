@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset=utf-8>
-  <title>Yodlr Registration Portal</title>
-</head>
-<body>
-  <h1>Yodlr Registration Portal</h1>
-  <form>
-    Email: <input type="email" name="email"></br>
-    <button type="submit">Submit</button>
-  </form>
-  <p>
-    <a href="/admin.html">Admin Page</a>
-  </p>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <title>Yodlr Registration Portal</title>
+        <link href="css/index.css" rel="stylesheet" />
+        <link href="css/signup.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="content-wrapper">
+            <h1>Yodlr Registration Portal</h1>
+            <form id="signup-form" action="#" autocomplete="off">
+                <div class="form-group">
+                    <label for="firstName">First name: </label>
+                    <input type="text" name="firstName" id="fn-input" />
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last name: </label>
+                    <input type="text" name="lastName" id="ln-input" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email-input" />
+                </div>
+                <button id="form-btn" type="submit">Submit</button>
+            </form>
+            <p>
+                <a href="/index.html" id="home-link">Go home</a>
+            </p>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+            integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="js/signup.js"></script>
+    </body>
 </html>
